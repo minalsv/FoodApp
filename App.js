@@ -9,7 +9,7 @@ import { Cell, Section, TableView } from 'react-native-tableview-simple';
 // Import project files
 import Restaurant from './components/Restaurant';
 import Home from './components/Home';
-import Menu from './components/Menu';  // Import Menu Screen
+import Menu from './components/Menu';
 import styles from './assets/styles/styles';
 
 const Stack = createStackNavigator();

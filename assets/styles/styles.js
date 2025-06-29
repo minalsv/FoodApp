@@ -7,22 +7,27 @@ const styles = StyleSheet.create({
       alignItems: 'center' },
       title: { fontSize: 24, fontWeight: 'bold', marginBottom: 20 },
       description: { fontSize: 16, marginBottom: 20 },
-      menuText: { fontSize: 18, color: 'blue', textDecorationLine: 'underline' },
+      menuText: { fontSize: 18, color: 'blue', textDecorationLine: 'underline',
+      backgroundColor: 'lightGreen',
+  },
   tableView: {
       flex: 1,
   },
   cell: {
     height: 290, // Set the height to 290px
     backgroundColor: 'transparent', // Transparent background
-    borderBottomWidth: 0, // Remove bottom border (you can customize this as needed)
+    borderBottomWidth: 2, // Remove bottom border (you can customize this as needed)
   },
   cellContent: {
-    flex: 1,
     position: 'relative',
+    height: 290,
+    backgroundColor: 'transparent',
+    borderRadius: 10,
+    overflow: 'hidden',
   },
   image: {
     width: '100%',
-    height: 170, // Adjust image height to fit the design
+    height: 170,
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10, // Rounded corners for the image
   },
@@ -58,6 +63,20 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#fff',
   },
+  cellContainer: {
+     marginBottom: 10,
+  },
+  restaurantContainer: {
+    flex: 1,
+    justifyContent: 'center', alignItems: 'center',
+  },
+  nameTitle: {
+      fontSize: 24,
+      fontWeight: 'bold',
+  },
+  description: {
+      fontSize: 16,
+      marginTop: 10 },
 });
 
 export default styles;
