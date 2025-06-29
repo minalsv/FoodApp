@@ -16,9 +16,9 @@ const Home = () => {
     { name: "Burger Haven", tagline: "Burgers, Fries, £", eta: "5-15", imgUri: require('../assets/images/burger.jpg') }
   ];
 
-  // Navigate to the Restaurant screen with the restaurant name
-  const handleCellPress = (restaurantName) => {
-    navigation.navigate('Restaurant', { restaurantName });
+  // Navigate to the Restaurant screen with the restaurant name and image URI
+  const handleCellPress = (restaurantName, imgUri) => {
+    navigation.navigate('Restaurant', { restaurantName, imgUri });  // Pass both restaurant name and image URI
   };
 
   return (
@@ -33,7 +33,7 @@ const Home = () => {
                 tagline={restaurant.tagline}
                 eta={restaurant.eta}
                 imgUri={restaurant.imgUri}
-                onPress={() => handleCellPress(restaurant.name)}  // Navigate to Restaurant screen
+                onPress={() => handleCellPress(restaurant.name,restaurant.imgUri)}  // Navigate to Restaurant screen
               />
             ))}
           </Section>

@@ -9,13 +9,13 @@ const Menu = () => {
   const { restaurantName } = route.params; // Get the restaurant name passed from RestaurantScreen
 
   return (
-    <SafeAreaView style={styles.container}>
-      <Text style={styles.title}>{restaurantName} Menu</Text>
-      <Text style={styles.menuItem}>Pizza - $10</Text>
-      <Text style={styles.menuItem}>Pasta - $12</Text>
-      <Text style={styles.menuItem}>Gelato - $5</Text>
-      {/* Add more menu items here */}
-    </SafeAreaView>
+        <SafeAreaView style={styles.safeAreaContainer}>
+          <ScrollView style={{height:"100%"}}>
+            <TableView style={styles.tableView} separatorColor="#ccc">
+
+            </TableView>
+          </ScrollView>
+        </SafeAreaView>
   );
 };
 
